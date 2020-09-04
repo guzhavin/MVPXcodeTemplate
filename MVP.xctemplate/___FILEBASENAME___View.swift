@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 class ___VARIABLE_productName:identifier___ViewController: UIViewController {
-    private var presenter: ___VARIABLE_productName:identifier___Presentable
+    var presenter: ___VARIABLE_productName:identifier___Presentable
 
-    required init(presenter: ___VARIABLE_productName:identifier___Presentable) {
+    init(presenter: ___VARIABLE_productName:identifier___Presentable) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }

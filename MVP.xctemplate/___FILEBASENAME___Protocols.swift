@@ -9,8 +9,15 @@
 import Foundation
 import UIKit
 
-protocol ___VARIABLE_productName:identifier___Displayable: class {}
+protocol ___VARIABLE_productName:identifier___Displayable: class {
+    var presenter: ___VARIABLE_productName:identifier___Presentable { get }
+}
 
-protocol ___VARIABLE_productName:identifier___Presentable {}
+protocol ___VARIABLE_productName:identifier___Presentable {
+    var view: ___VARIABLE_productName:identifier___Displayable? { get set }
+    var router: ___VARIABLE_productName:identifier___Routable { get }
+}
 
-protocol ___VARIABLE_productName:identifier___Routable {}
+protocol ___VARIABLE_productName:identifier___Routable {
+    var view: UIViewController? { get set }
+}
